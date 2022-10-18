@@ -1,13 +1,14 @@
 $(function()
 {
     // Шапка навигаций
+    let [ulNavbarNavs, inputSearch, aSearchIcon, aCloseIcon] = 
+    [$("#ulNavbarNav"), $("#inputSearch"), $("#aSearchIcon"), $("#aCloseIcon")];
+
     let namesMenu = {
         Name :["Поставщики", "Закупки", "Товары", "Покупатели"],
         Link :["Поставщики", "Закупки", "Товары", "Покупатели"]
     };
-    
-    let [ulNavbarNavs, inputSearch, aSearchIcon, aCloseIcon] = 
-    [$("#ulNavbarNav"), $("#inputSearch"), $("#aSearchIcon"), $("#aCloseIcon")];
+
     inputSearch.hide();
     aCloseIcon.hide();
 
@@ -20,6 +21,9 @@ $(function()
         `);
     };
     
+    navigatorObject = window.navigator
+    console.log(navigatorObject)
+
     aSearchIcon.on("click", function() 
     {
         inputSearch.show();
