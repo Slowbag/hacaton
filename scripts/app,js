@@ -5,8 +5,11 @@ $(function()
         Name :["Поставщики", "Закупки", "Товары", "Покупатели"],
         Link :["Поставщики", "Закупки", "Товары", "Покупатели"]
     };
-
-    let ulNavbarNavs = $("#ulNavbarNav");
+    
+    let [ulNavbarNavs, inputSearch, aSearchIcon, aCloseIcon] = 
+    [$("#ulNavbarNav"), $("#inputSearch"), $("#aSearchIcon"), $("#aCloseIcon")];
+    inputSearch.hide();
+    aCloseIcon.hide();
 
     for(var i = 0; i < namesMenu.Name.length; i++)
     {
@@ -17,4 +20,17 @@ $(function()
         `);
     };
     
-})
+    aSearchIcon.on("click", function() 
+    {
+        inputSearch.show();
+        aCloseIcon.show();
+        aSearchIcon.hide();
+    });
+
+    aCloseIcon.on("click", function()
+    {
+        inputSearch.hide();
+        aCloseIcon.hide();
+        aSearchIcon.show();
+    });
+});
