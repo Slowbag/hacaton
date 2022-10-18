@@ -1,0 +1,20 @@
+$(function()
+{
+    // Шапка навигаций
+    let namesMenu = {
+        Name :["Поставщики", "Закупки", "Товары", "Покупатели"],
+        Link :["Поставщики", "Закупки", "Товары", "Покупатели"]
+    };
+
+    let ulNavbarNavs = $("#ulNavbarNav");
+
+    for(var i = 0; i < namesMenu.Name.length; i++)
+    {
+        ulNavbarNavs.append(`
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="${namesMenu.Link[i]}">${namesMenu.Name[i]}</a>
+            </li>
+        `);
+    };
+    
+})

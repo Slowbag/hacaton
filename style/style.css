@@ -1,0 +1,35 @@
+@font-face 
+{
+    font-family: adineueprocyr_lightweb;
+    src: url(fonts/adineueprocyr_lightweb.ttf);
+}
+
+@font-face 
+{
+    font-family: adineueprocyr_boldweb;
+    src: url(fonts/adineueprocyr_boldweb.ttf);
+}
+
+.adineueprocyr_l
+{
+    font-family: adineueprocyr_lightweb;
+    font-size: 16px;
+}
+
+.adineueprocyr_b
+{
+    font-family: adineueprocyr_boldweb;
+    font-size: 16px;
+}
+
+.navbar
+{
+    background: rgb(255,99,110);
+    background: linear-gradient(150deg, rgba(255,99,110,1) 0%, rgba(252,171,115,1) 100%);
+}
+
+body
+{
+    background: #333235;
+    color: white;
+}
