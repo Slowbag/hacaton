@@ -4,15 +4,15 @@ $(function()
     let [ulNavbarNavs, inputSearch, aSearchIcon, aCloseIcon] = 
     [$("#ulNavbarNav"), $("#inputSearch"), $("#aSearchIcon"), $("#aCloseIcon")];
 
+    inputSearch.hide();
+    aCloseIcon.hide();
+
     let namesMenu = {
         Name :["Поставщики", "Закупки", "Товары", "Покупатели"],
         Link :["Поставщики", "Закупки", "Товары", "Покупатели"]
     };
 
-    inputSearch.hide();
-    aCloseIcon.hide();
-
-    for(var i = 0; i < namesMenu.Name.length; i++)
+    for(let i = 0; i < namesMenu.Name.length; i++)
     {
         ulNavbarNavs.append(`
             <li class="nav-item">
